@@ -14,7 +14,7 @@ export class LoginComponent {
 
   password = ''
 
-  constructor(private route : Router){
+  constructor(private route: Router) {
 
   }
 
@@ -28,5 +28,9 @@ export class LoginComponent {
     } else {
       this.message = 'login & password invalid'
     }
+  }
+
+  signUp() {
+    this.route.navigateByUrl('signup')
   }
 }

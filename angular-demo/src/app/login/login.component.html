@@ -1,3 +1,4 @@
+<app-navbar></app-navbar>
 <div align="center">
     <h1>Login</h1>
     <h3>{{ message }}</h3>
@@ -12,7 +13,10 @@
         </tr>
         <tr>
             <th></th>
-            <td><button (click)="signIn()">signIn</button></td>
+            <td>
+                <button (click)="signIn()">signIn</button> &nbsp;
+                <button (click)="signUp()">signUp</button>
+            </td>
         </tr>
     </table>
 </div>
